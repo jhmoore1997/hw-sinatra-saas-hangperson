@@ -63,8 +63,6 @@ class HangpersonGame
     else
       return :play
     end
-    
-      
   end
 
 
