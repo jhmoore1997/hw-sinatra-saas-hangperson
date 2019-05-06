@@ -56,10 +56,10 @@ class HangpersonGame
   
   attr_accessor :check_win_or_lose
   def check_win_or_lose
-    if @wrong_guesses.length == 7
-      return :lose
-    elsif self.word_with_guesses = @word
+    if self.word_with_guesses == @word
       return :win
+    elsif @wrong_guesses.length == 7
+      return :lose
     else
       return :play
     end
